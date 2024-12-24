@@ -58,7 +58,7 @@ class _MainTabBarState extends State<MainTabBar> with TickerProviderStateMixin {
                     },
                     physics: const NeverScrollableScrollPhysics(),
                     isScrollable: false,
-                    indicatorColor: ProjectColors.projectDefaultColor,
+                    indicatorColor: ProjectColors.optionalTextColor2,
                     controller: tabController,
                     tabs: const [
                       Tab(
@@ -72,33 +72,4 @@ class _MainTabBarState extends State<MainTabBar> with TickerProviderStateMixin {
                           icon: Icon(Icons.account_circle_outlined, size: 22))
                     ]))));
   }
-}
-
-class CommonAppbar extends StatelessWidget implements PreferredSizeWidget {
-  final String preference;
-
-  const CommonAppbar({Key? key, required this.preference}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return AppBar(
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)),
-        ),
-        backgroundColor: ProjectColors.projectPrimaryWidgetColor,
-        leading: ((preference == "back"))
-            ? IconButton(
-                onPressed: () {
-                  Navigator.of(context).pop(null);
-                },
-                icon: const Icon(Icons.arrow_back))
-            : const SizedBox(),
-        title: const Center(child: Text("Cleanify")),
-        actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.settings))
-        ]);
-  }
-
-  @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }

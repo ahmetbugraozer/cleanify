@@ -1,13 +1,12 @@
 import 'dart:io';
-import 'package:cleanify/elements/project_elements.dart';
-import 'package:cleanify/firebase_methods/firestore_methods.dart';
-import 'package:cleanify/pages/mapselect.dart';
-import 'package:cleanify/pages/tabbar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:path/path.dart';
+import 'package:cleanify/elements/project_elements.dart';
+import 'package:cleanify/firebase_methods/firestore_methods.dart';
+import 'package:cleanify/pages/mapselect.dart';
 
 class PostPage extends StatefulWidget {
   const PostPage({Key? key}) : super(key: key);
@@ -32,203 +31,186 @@ class _PostPageState extends State<PostPage> {
   String defaultPhoto =
       'https://soccerpointeclaire.com/wp-content/uploads/2021/06/default-profile-pic-e1513291410505.jpg';
   int count = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: const CommonAppbar(preference: "back"),
-        backgroundColor: ProjectColors.projectBackgroundColor,
-        body: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20) +
-                const EdgeInsets.only(top: 25),
-            child: ListView.builder(
-                itemCount: 1,
-                itemBuilder: (context, index) {
-                  return Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                            height: 50,
-                            child: Text("Create a post",
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .displayLarge
-                                    ?.copyWith(
-                                        fontSize: 25,
-                                        shadows: [
-                                          const Shadow(
-                                              offset: Offset(0.2, 1),
-                                              blurRadius: 0.5)
-                                        ],
-                                        color:
-                                            ProjectColors.defaultTextColor))),
-                        TextField(
-                            maxLength: 300,
-                            onChanged: (value) {
-                              setState(() {
-                                description = value;
-                              });
-                              ;
-                            },
-                            maxLines: 7,
-                            decoration: const InputDecoration(
-                                isDense: true,
-                                hintText: 'Describe the pollution',
-                                labelText: "Description",
-                                border: OutlineInputBorder())),
-                        Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 8.0),
-                            child: Row(children: [
-                              Expanded(
-                                  flex: 3,
-                                  child: IconButton(
-                                      onPressed: () {
-                                        showModalBottomSheet(
-                                            context: context,
-                                            builder: (BuildContext context) {
-                                              return Container(
-                                                  padding:
-                                                      const EdgeInsets.all(10),
-                                                  child: Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.min,
-                                                      children: [
-                                                        ListTile(
-                                                            title: const Text(
-                                                                "From Gallery",
-                                                                style: ProjectTextStyles
-                                                                    .styleListViewGeneral),
-                                                            onTap: () {
-                                                              mediaRemains =
-                                                                  true;
-                                                              imgFromGallery();
-                                                              Navigator.of(
-                                                                      context)
-                                                                  .pop();
-                                                            }),
-                                                        ListTile(
-                                                            title: const Text(
-                                                                "Take Photo",
-                                                                style: ProjectTextStyles
-                                                                    .styleListViewGeneral),
-                                                            onTap: () {
-                                                              mediaRemains =
-                                                                  true;
-                                                              imgFromCamera();
-                                                              Navigator.of(
-                                                                      context)
-                                                                  .pop();
-                                                            })
-                                                      ]));
-                                            });
-                                      },
-                                      color: mediaRemains
-                                          ? Colors.green
-                                          : Colors.red,
-                                      icon: const Icon(Icons.photo),
-                                      iconSize: 30)),
-                              Expanded(
-                                  flex: 3,
-                                  child: IconButton(
-                                      onPressed: () async {
-                                        LatLng? result =
-                                            await Navigator.of(context).push(
-                                                MaterialPageRoute(
-                                                    builder: (context) =>
-                                                        const MapSelect()));
-                                        if (result != null) {
-                                          longtitude = result.longitude;
-                                          latitude = result.latitude;
-                                          setState(() {
-                                            mapSelected = true;
-                                          });
-                                        } else {
-                                          setState(() {
-                                            mapSelected = false;
-                                          });
-                                        }
-                                      },
-                                      color: mapSelected
-                                          ? Colors.green
-                                          : Colors.red,
-                                      icon: const Icon(Icons.location_pin),
-                                      iconSize: 30)),
-                              const Spacer(flex: 12),
-                              Expanded(
-                                  flex: 6,
-                                  child: ElevatedButton(
-                                      onPressed: () {
-                                        if (description.isNotEmpty &&
-                                            mediaRemains &&
-                                            mapSelected) {
-                                          //save description, media and location to database
-                                          FirestoreMethods()
-                                              .validateAndSubmitPost(
-                                                  description,
-                                                  photoPath,
-                                                  longtitude,
-                                                  latitude);
-                                          Navigator.of(context).pop();
-                                        } else {}
-                                      },
-                                      child: const Text("Post")))
-                            ])),
-                        Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: (description.isNotEmpty &&
-                                    mediaRemains &&
-                                    mapSelected)
-                                ? []
-                                : ((description.isNotEmpty &&
-                                        mediaRemains &&
-                                        mapSelected == false)
-                                    ? [const Text("Please select a location")]
-                                    : ((description.isNotEmpty &&
-                                            mediaRemains == false &&
-                                            mapSelected)
-                                        ? [const Text("Media is required")]
-                                        : ((description.isEmpty &&
-                                                mediaRemains &&
-                                                mapSelected)
-                                            ? [
-                                                const Text(
-                                                    "Please enter a description")
-                                              ]
-                                            : ((description.isNotEmpty &&
-                                                    mediaRemains == false &&
-                                                    mapSelected == false)
-                                                ? [
-                                                    const Text(
-                                                        "Media and location needed")
-                                                  ]
-                                                : ((description.isEmpty &&
-                                                        mediaRemains &&
-                                                        mapSelected == false)
-                                                    ? [
-                                                        const Text(
-                                                            "Description and location needed")
-                                                      ]
-                                                    : ((description.isEmpty &&
-                                                            mediaRemains ==
-                                                                false &&
-                                                            mapSelected)
-                                                        ? [
-                                                            const Text(
-                                                                "Description and media required")
-                                                          ]
-                                                        : [
-                                                            const Text(
-                                                                "Description, media and location required")
-                                                          ]))))))),
-                        const SizedBox(height: 30),
-                        _selectedImage != null
-                            ? SizedBox(
-                                height: 200,
-                                width: 200,
-                                child: Image.file(_selectedImage!,
-                                    fit: BoxFit.cover))
-                            : const Text("Please select an image")
-                      ]);
-                })));
+      appBar: const CommonAppbar(preference: "back"),
+      backgroundColor: ProjectColors.projectBackgroundColor,
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              "Create a Post",
+              style: TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+                color: ProjectColors.defaultTextColor,
+              ),
+            ),
+            const SizedBox(height: 20),
+            TextField(
+              maxLength: 300,
+              onChanged: (value) {
+                setState(() {
+                  description = value;
+                });
+              },
+              maxLines: 7,
+              decoration: InputDecoration(
+                isDense: true,
+                hintText: 'Describe the pollution',
+                labelText: "Description",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+            Row(
+              children: [
+                _buildIconButton(
+                  icon: Icons.photo,
+                  color: mediaRemains ? Colors.green : Colors.red,
+                  onPressed: () {
+                    _showImageSourceActionSheet(context);
+                  },
+                ),
+                const SizedBox(width: 10),
+                _buildIconButton(
+                  icon: Icons.location_pin,
+                  color: mapSelected ? Colors.green : Colors.red,
+                  onPressed: () async {
+                    LatLng? result = await Navigator.of(context).push(
+                      MaterialPageRoute(
+                          builder: (context) => const MapSelect()),
+                    );
+                    if (result != null) {
+                      longtitude = result.longitude;
+                      latitude = result.latitude;
+                      setState(() {
+                        mapSelected = true;
+                      });
+                    } else {
+                      setState(() {
+                        mapSelected = false;
+                      });
+                    }
+                  },
+                ),
+                const Spacer(),
+                ElevatedButton(
+                  onPressed: () {
+                    if (description.isNotEmpty && mediaRemains && mapSelected) {
+                      FirestoreMethods().validateAndSubmitPost(
+                        description,
+                        photoPath,
+                        longtitude,
+                        latitude,
+                      );
+                      Navigator.of(context).pop();
+                    }
+                  },
+                  child: const Text("Post"),
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            _buildFeedbackMessage(),
+            const SizedBox(height: 20),
+            _selectedImage != null
+                ? SizedBox(
+                    height: 200,
+                    width: double.infinity,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10.0),
+                      child: Image.file(
+                        _selectedImage!,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  )
+                : const Text(""),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildIconButton(
+      {required IconData icon,
+      required Color color,
+      required VoidCallback onPressed}) {
+    return IconButton(
+      icon: Icon(icon, size: 30, color: color),
+      onPressed: onPressed,
+    );
+  }
+
+  void _showImageSourceActionSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      builder: (BuildContext context) {
+        return Container(
+          padding: const EdgeInsets.all(10),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                title: const Text(
+                  "From Gallery",
+                  style: ProjectTextStyles.styleListViewGeneral,
+                ),
+                onTap: () {
+                  mediaRemains = true;
+                  imgFromGallery();
+                  Navigator.of(context).pop();
+                },
+              ),
+              ListTile(
+                title: const Text(
+                  "Take Photo",
+                  style: ProjectTextStyles.styleListViewGeneral,
+                ),
+                onTap: () {
+                  mediaRemains = true;
+                  imgFromCamera();
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildFeedbackMessage() {
+    if (description.isNotEmpty && mediaRemains && mapSelected) {
+      return const SizedBox.shrink();
+    }
+
+    String message = "Description, media and location required";
+    if (description.isNotEmpty && mediaRemains && !mapSelected) {
+      message = "Please select a location";
+    } else if (description.isNotEmpty && !mediaRemains && mapSelected) {
+      message = "Media is required";
+    } else if (description.isEmpty && mediaRemains && mapSelected) {
+      message = "Please enter a description";
+    } else if (description.isNotEmpty && !mediaRemains && !mapSelected) {
+      message = "Media and location needed";
+    } else if (description.isEmpty && mediaRemains && !mapSelected) {
+      message = "Description and location needed";
+    } else if (description.isEmpty && !mediaRemains && mapSelected) {
+      message = "Description and media required";
+    }
+
+    return Text(
+      message,
+      style: const TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+    );
   }
 
   Future uploadFile() async {

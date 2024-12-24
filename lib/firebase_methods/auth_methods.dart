@@ -1,6 +1,7 @@
 import 'package:cleanify/models/userModel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 
 class Auth {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -64,17 +65,17 @@ class Auth {
 
       QuerySnapshot querySnapshot = await koleksiyonRef.get();
 
-      querySnapshot.docs.forEach((doc) {
+      for (var doc in querySnapshot.docs) {
         Map<String, dynamic> data = doc.data() as Map<String, dynamic>;
         if (data['uid'] == Auth().currentUser!.uid) {
-          print(data['uid']);
+          debugPrint(data['uid']);
           DocumentReference ref = _firestore.collection('posts').doc(doc.id);
 
           ref.delete();
         }
-      });
+      }
     } catch (e) {
-      print('Hata: $e');
+      debugPrint('Hata: $e');
     }
   }
 
@@ -86,16 +87,16 @@ class Auth {
 
       QuerySnapshot querySnapshot = await koleksiyonRef.get();
 
-      querySnapshot.docs.forEach((doc) {
+      for (var doc in querySnapshot.docs) {
         Map<String, dynamic> data = doc.data() as Map<String, dynamic>;
         if (data['uid'] == Auth().currentUser!.uid) {
           DocumentReference ref = _firestore.collection('users').doc(doc.id);
 
           ref.delete();
         }
-      });
+      }
     } catch (e) {
-      print('Hata: $e');
+      debugPrint('Hata: $e');
     }
   }
 }

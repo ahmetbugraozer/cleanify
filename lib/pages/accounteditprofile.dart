@@ -80,7 +80,7 @@ class _EditProfileState extends State<AccountEditProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: ProjectColors.projectBackgroundColor,
-        appBar: const CommonAppbar(preference: "main"),
+        appBar: const CommonAppbar(preference: "back"),
         body: StreamBuilder(
             stream: FirebaseFirestore.instance
                 .collection('users')

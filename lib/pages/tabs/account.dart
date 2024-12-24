@@ -17,33 +17,38 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: ProjectColors.projectBackgroundColor,
-        body: ListView(children: [
-          const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-              child: ProfileSection()),
-          const SizedBox(height: 10),
-          MyListTile(
-              subject: "Edit profile",
-              myIcon: const Icon(Icons.edit),
+        body: Padding(
+          padding: const EdgeInsets.all(16),
+          child: ListView(children: [
+            const ProfileSection(),
+            const SizedBox(height: 10),
+            buildSettingsCard(
+              context,
+              icon: Icons.edit,
+              title: "Edit profile",
               onTap: () {
-                Navigator.pushReplacement(
+                Navigator.push(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const AccountEditProfile()));
-              }),
-          MyListTile(
-              subject: "Log out",
-              myIcon: const Icon(Icons.logout),
+              },
+            ),
+            buildSettingsCard(
+              context,
+              icon: Icons.logout,
+              title: "Log out",
               onTap: () {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
                         builder: (context) => const LoginScreen()));
                 Auth().logOut();
-              }),
-          MyListTile(
-              subject: "Delete account",
-              myIcon: const Icon(Icons.delete),
+              },
+            ),
+            buildSettingsCard(
+              context,
+              icon: Icons.delete,
+              title: "Delete account",
               onTap: () {
                 Navigator.pushReplacement(
                     context,
@@ -52,8 +57,10 @@ class _AccountPageState extends State<AccountPage> {
                 Auth().deletePosts();
                 Auth().deleteUserInfo();
                 Auth().deleteAccount();
-              })
-        ]));
+              },
+            ),
+          ]),
+        ));
   }
 }
 
@@ -134,9 +141,7 @@ class MyListTile extends StatelessWidget {
             child: ListTile(
                 title: Text(subject,
                     style: const TextStyle(
-                        color: Color.fromARGB(255, 95, 95, 95),
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400)),
+                        fontSize: 15, fontWeight: FontWeight.w400)),
                 onTap: onTap,
                 leading: Container(
                     alignment: Alignment.center,

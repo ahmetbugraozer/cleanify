@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                                             child: Padding(
                                                 padding:
                                                     const EdgeInsets.symmetric(
-                                                        horizontal: 8),
+                                                        horizontal: 16),
                                                 child: Text(
                                                     posts["description"]
                                                         .toString(),

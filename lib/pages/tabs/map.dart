@@ -78,7 +78,7 @@ class MapPageState extends State<MapPage> {
                     },
                     markers: pollutionMarkers)),
             bottomNavigationBar: FloatingActionButton.extended(
-                backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+                backgroundColor: ProjectColors.projectPrimaryWidgetColor,
                 onPressed: _goToThePollution,
                 label: const Text('Navigate between pollutions'),
                 icon: const Icon(Icons.map_outlined))));
