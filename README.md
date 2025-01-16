@@ -1,5 +1,5 @@
 
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/f372bc4d-de84-4a0f-b98a-0f3d85e06b5d" alt="Screenshot_1708357816" width="25%">
+![icon - Kopya](https://github.com/user-attachments/assets/3de5f7a2-7a52-4af0-a5d7-c5e172e6c97a)
 
 # Cleanify
 
@@ -23,7 +23,7 @@ Developed using Flutter and Firebase, Cleanify uses real-time database and Googl
 
 ## Screenshots
 
-![Screenshot_1736990769](https://github.com/user-attachments/assets/4b28e50b-bb1d-48c0-8936-1ad25837dc2b | width=25)
+![Screenshot_1736990769](https://github.com/user-attachments/assets/4b28e50b-bb1d-48c0-8936-1ad25837dc2b | width=25%)
 ![Screenshot_1736990749](https://github.com/user-attachments/assets/8f9d955a-be4f-47a2-a1e8-232b65e077ad)
 ![Screenshot_1736990741](https://github.com/user-attachments/assets/da44c668-3aad-42ad-8899-839a6f01b294)
 ![Screenshot_1736990725](https://github.com/user-attachments/assets/9a104bcc-e763-4986-94d0-572599a76870)
