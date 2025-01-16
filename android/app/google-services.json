@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "799465605934",
+    "project_id": "cleanify-cb768",
+    "storage_bucket": "cleanify-cb768.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799465605934:android:0972c1fb658664d34688bf",
+        "android_client_info": {
+          "package_name": "com.example.cleanify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoxFiHw6yMYJFru6KAnfb3__4yGeWM4EM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
