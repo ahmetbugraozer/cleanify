@@ -57,7 +57,7 @@ You can download the apk file for your mobile version [here.](https://drive.goog
 
 ## Technologies
 
-<img src="https://github.com/user-attachments/assets/f2ad1a06-52dc-428e-be9e-f4aa1c0e2585" alt="Flutter" height= "25%" width="25%">
+<img src="https://github.com/user-attachments/assets/f2ad1a06-52dc-428e-be9e-f4aa1c0e2585" alt="Flutter" height= "12.5%" width="25%">
 
 <img src="https://github.com/user-attachments/assets/ad11fb08-d233-4ffb-8153-e599238bc8cd" alt="Firebase" width="25%">
 
