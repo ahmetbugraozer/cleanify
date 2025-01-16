@@ -53,7 +53,7 @@ Developed using Flutter and Firebase, Cleanify uses real-time database and Googl
 
 ## Installation
 
-You can download the apk file for your mobile version [here.](https://drive.google.com/file/d/1aZid1MKiSme8mbvEuRBGsurVhkxYLLeP/edit)
+You can download the apk file from [here.](https://drive.google.com/file/d/1aZid1MKiSme8mbvEuRBGsurVhkxYLLeP/edit)
 
 ## Technologies
 
