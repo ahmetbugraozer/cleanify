@@ -17,8 +17,11 @@ Developed using Flutter and Firebase, Cleanify uses real-time database and Googl
 
 ## Solved SDG's
 
-![E_SDG_Icons-13](https://github.com/user-attachments/assets/5f5cbc39-6140-4bd3-ac1e-bde1e223c08d)
-![E_SDG_Icons-15](https://github.com/user-attachments/assets/32834b2c-b1de-4133-b3c0-6e00bf8f6948)
+<img src="https://github.com/user-attachments/assets/5f5cbc39-6140-4bd3-ac1e-bde1e223c08d" alt="E_SDG_Icons-13" width="50%">
+
+<img src="https://github.com/user-attachments/assets/32834b2c-b1de-4133-b3c0-6e00bf8f6948" alt="E_SDG_Icons-15" width="50%">
+
+## Screenshots
 
 <img src="https://github.com/user-attachments/assets/4cb165d0-f93e-4d33-9cb1-caa547738644" alt="Screenshot_1736990600" width="25%">
 
@@ -54,7 +57,10 @@ You can download the apk file for your mobile version [here.](https://drive.goog
 
 ## Technologies
 
-![Flutter](https://github.com/user-attachments/assets/f2ad1a06-52dc-428e-be9e-f4aa1c0e2585)
-![Firebase](https://github.com/user-attachments/assets/ad11fb08-d233-4ffb-8153-e599238bc8cd)
-![Google Maps](https://github.com/user-attachments/assets/c4c7384e-6113-45f1-89dc-a468da3448b1)
+<img src="https://github.com/user-attachments/assets/f2ad1a06-52dc-428e-be9e-f4aa1c0e2585" alt="Flutter" width="50%">
+
+<img src="https://github.com/user-attachments/assets/ad11fb08-d233-4ffb-8153-e599238bc8cd" alt="Firebase" width="50%">
+
+<img src="https://github.com/user-attachments/assets/c4c7384e-6113-45f1-89dc-a468da3448b1" alt="Google Maps" width="50%">
+
 
