@@ -22,7 +22,7 @@ Developed using Flutter and Firebase, Cleanify uses real-time database and Googl
 
 ## Screenshots
 
-![Screenshot_1736990600](https://github.com/user-attachments/assets/4cb165d0-f93e-4d33-9cb1-caa547738644)
+![Screenshot_1736990600](https://github.com/user-attachments/assets/4cb165d0-f93e-4d33-9cb1-caa547738644 =100x20)
 ![Screenshot_1736990603](https://github.com/user-attachments/assets/268894e2-b3dd-47d5-a04f-5d6be1460bf6)
 ![Screenshot_1736990605](https://github.com/user-attachments/assets/8b21d052-c0f8-43ec-a258-ee20e32a3bd2)
 ![Screenshot_1736990607](https://github.com/user-attachments/assets/3c486108-6709-4882-bcde-fb53744783a6)
