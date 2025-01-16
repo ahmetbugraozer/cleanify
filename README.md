@@ -1,5 +1,5 @@
 
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/f372bc4d-de84-4a0f-b98a-0f3d85e06b5d" alt="Screenshot_1708357816" width="25%">
+<img src="https://github.com/user-attachments/assets/3de5f7a2-7a52-4af0-a5d7-c5e172e6c97a" alt="icon - Kopya" width="50%">
 
 # Cleanify
 
@@ -17,28 +17,54 @@ Developed using Flutter and Firebase, Cleanify uses real-time database and Googl
 
 ## Solved SDG's
 
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/14c558fb-5c96-454d-808b-747982c94b56" alt="Screenshot_1708357816" width="25%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/df719a7d-0ae4-4fca-a9b8-b8cf7e28f7d5" alt="Screenshot_1708357816" width="25%">
+<img src="https://github.com/user-attachments/assets/5f5cbc39-6140-4bd3-ac1e-bde1e223c08d" alt="E_SDG_Icons-13" width="25%">
+
+<img src="https://github.com/user-attachments/assets/32834b2c-b1de-4133-b3c0-6e00bf8f6948" alt="E_SDG_Icons-15" width="25%">
+
+## Demo
+
+You can watch the demo from [here.](https://www.youtube.com/watch?v=Kbz9_HsCc6M)
 
 ## Screenshots
 
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/eab72c08-7865-40fa-bf48-29cac7c97f9e" alt="Screenshot_1708357816" width="25%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/f5eb5667-94ee-46d0-9a4a-e992eee01bf4" alt="Screenshot_1708357819" width="25%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/d846c238-4bd0-4442-88c1-af6ed4922bba" alt="Screenshot_1708357821" width="25%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/4a249010-7688-4d46-a901-bcf4b8525314" alt="Screenshot_1708357768" width="25%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/01a2d093-e692-4c90-bd04-b544cb407788" alt="Screenshot_1708357775" width="25%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/27d2a866-bc26-4fc8-891f-6e152e4d6b03" alt="Screenshot_1708357775" width="25%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/4d6fe0c5-bc37-485b-ba7b-791f9eb9a202" alt="Screenshot_1708357811" width="25%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/1c392efd-c53e-4331-9e82-a4235622e536" alt="Screenshot_1708357782" width="25%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/0f6e2559-e98d-407a-b107-a28044ccbb3b" alt="Screenshot_1708357782" width="25%">
+<img src="https://github.com/user-attachments/assets/4cb165d0-f93e-4d33-9cb1-caa547738644" alt="Screenshot_1736990600" width="25%">
 
+<img src="https://github.com/user-attachments/assets/268894e2-b3dd-47d5-a04f-5d6be1460bf6" alt="Screenshot_1736990603" width="25%">
+
+<img src="https://github.com/user-attachments/assets/8b21d052-c0f8-43ec-a258-ee20e32a3bd2" alt="Screenshot_1736990605" width="25%">
+
+<img src="https://github.com/user-attachments/assets/3c486108-6709-4882-bcde-fb53744783a6" alt="Screenshot_1736990607" width="25%">
+
+<img src="https://github.com/user-attachments/assets/0a9e1998-f981-4881-bc5b-7f40e65d717c" alt="Screenshot_1736990612" width="25%">
+
+<img src="https://github.com/user-attachments/assets/6ef20e46-0b80-48b5-8034-31bdd8d48251" alt="Screenshot_1736990658" width="25%">
+
+<img src="https://github.com/user-attachments/assets/bdb377db-7e72-4032-b6a2-b123ad208b65" alt="Screenshot_1736990695" width="25%">
+
+<img src="https://github.com/user-attachments/assets/cc961316-2b60-456e-a60f-024383278c48" alt="Screenshot_1736990703" width="25%">
+
+<img src="https://github.com/user-attachments/assets/bf846035-af4c-4c1b-ad36-d59ca16990a6" alt="Screenshot_1736990711" width="25%">
+
+<img src="https://github.com/user-attachments/assets/9b1f0ec3-6fd0-4c2f-96dc-235e6a05de05" alt="Screenshot_1736990720" width="25%">
+
+<img src="https://github.com/user-attachments/assets/9a104bcc-e763-4986-94d0-572599a76870" alt="Screenshot_1736990725" width="25%">
+
+<img src="https://github.com/user-attachments/assets/da44c668-3aad-42ad-8899-839a6f01b294" alt="Screenshot_1736990741" width="25%">
+
+<img src="https://github.com/user-attachments/assets/8f9d955a-be4f-47a2-a1e8-232b65e077ad" alt="Screenshot_1736990749" width="25%">
+
+<img src="https://github.com/user-attachments/assets/4b28e50b-bb1d-48c0-8936-1ad25837dc2b" alt="Screenshot_1736990769" width="25%">
 
 ## Installation
 
-You can download the apk file for your mobile version [here.](https://drive.google.com/file/d/1aZid1MKiSme8mbvEuRBGsurVhkxYLLeP/edit)
+You can download the apk file from [here.](https://drive.google.com/file/d/1aZid1MKiSme8mbvEuRBGsurVhkxYLLeP/edit)
 
 ## Technologies
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/14be2fca-bf70-46d3-bb26-d07149d6ffa5" alt="Screenshot_1708357782" width="25%" height="5%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/d4474caf-f98a-453f-8926-d21e6f582b61" alt="Screenshot_1708357782" width="25%" height="3%">
-<img src="https://github.com/axeonthe4th/cleanify/assets/108281186/a15b3c80-ec22-4fe2-b4c4-bf0fff8174f8" alt="Screenshot_1708357782" width="10%" height="10%">
+
+<img src="https://github.com/user-attachments/assets/f2ad1a06-52dc-428e-be9e-f4aa1c0e2585" alt="Flutter" width="25%">
+
+<img src="https://github.com/user-attachments/assets/ad11fb08-d233-4ffb-8153-e599238bc8cd" alt="Firebase" width="25%">
+
+<img src="https://github.com/user-attachments/assets/c4c7384e-6113-45f1-89dc-a468da3448b1" alt="Google Maps" width="25%">
+
 
