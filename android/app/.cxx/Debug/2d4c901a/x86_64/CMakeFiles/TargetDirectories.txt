@@ -1,0 +1,2 @@
+C:/Users/its4t/Desktop/Ahmet pc/coding/flutter_learn_full/cleanify/android/app/.cxx/Debug/2d4c901a/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/its4t/Desktop/Ahmet pc/coding/flutter_learn_full/cleanify/android/app/.cxx/Debug/2d4c901a/x86_64/CMakeFiles/rebuild_cache.dir
