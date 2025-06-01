@@ -44,7 +44,7 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
+  static FirebaseOptions web = FirebaseOptions(
     apiKey: EnvConfig.webApiKey,
     appId: EnvConfig.webAppId,
     messagingSenderId: EnvConfig.messagingSenderId,
@@ -53,7 +53,7 @@ class DefaultFirebaseOptions {
     storageBucket: EnvConfig.storageBucket,
   );
 
-  static const FirebaseOptions android = FirebaseOptions(
+  static FirebaseOptions android = FirebaseOptions(
     apiKey: EnvConfig.androidApiKey,
     appId: EnvConfig.androidAppId,
     messagingSenderId: EnvConfig.messagingSenderId,
@@ -61,7 +61,7 @@ class DefaultFirebaseOptions {
     storageBucket: EnvConfig.storageBucket,
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
+  static FirebaseOptions ios = FirebaseOptions(
     apiKey: EnvConfig.iosApiKey,
     appId: EnvConfig.iosAppId,
     messagingSenderId: EnvConfig.messagingSenderId,
@@ -70,7 +70,7 @@ class DefaultFirebaseOptions {
     iosBundleId: EnvConfig.iosBundleId,
   );
 
-  static const FirebaseOptions macos = FirebaseOptions(
+  static FirebaseOptions macos = FirebaseOptions(
     apiKey: EnvConfig.macosApiKey,
     appId: EnvConfig.macosAppId,
     messagingSenderId: EnvConfig.messagingSenderId,

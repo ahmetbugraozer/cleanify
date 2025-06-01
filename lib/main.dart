@@ -9,9 +9,21 @@ import 'firebase_methods/firebase_options.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EnvConfig.load();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  } catch (e) {
+    if (e.toString().contains('duplicate-app')) {
+      // Firebase already initialized, continue
+      debugPrint("Firebase already initialized");
+    } else {
+      // Re-throw other errors
+      rethrow;
+    }
+  }
+
   runApp(const MyApp());
 }
 
