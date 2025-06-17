@@ -1,5 +1,5 @@
 
-<img src="https://github.com/user-attachments/assets/3de5f7a2-7a52-4af0-a5d7-c5e172e6c97a" alt="icon - Kopya" width="50%">
+<img src="https://github.com/user-attachments/assets/9151079b-8959-4c3d-99e3-1b642937dd57" alt="icon - Kopya" width="50%">
 
 # Cleanify
 
@@ -17,9 +17,9 @@ Developed using Flutter and Firebase, Cleanify uses real-time database and Googl
 
 ## Solved SDG's
 
-<img src="https://github.com/user-attachments/assets/5f5cbc39-6140-4bd3-ac1e-bde1e223c08d" alt="E_SDG_Icons-13" width="25%">
+<img src="https://github.com/user-attachments/assets/4551d08b-7568-4c62-a112-151bad9718f7" alt="E_SDG_Icons-13" width="25%">
 
-<img src="https://github.com/user-attachments/assets/32834b2c-b1de-4133-b3c0-6e00bf8f6948" alt="E_SDG_Icons-15" width="25%">
+<img src="https://github.com/user-attachments/assets/aab41ca0-b5c6-45d4-b9a3-0a1bf6933b68" alt="E_SDG_Icons-15" width="25%">
 
 ## Demo
 
@@ -27,15 +27,13 @@ You can watch the demo from [here.](https://www.youtube.com/watch?v=Kbz9_HsCc6M)
 
 ## Screenshots
 
-<img src="https://github.com/user-attachments/assets/4cb165d0-f93e-4d33-9cb1-caa547738644" alt="Screenshot_1736990600" width="25%">
+<img src="https://github.com/user-attachments/assets/2d4e1393-9c18-43fd-8bd7-db6c33bb3326" alt="Screenshot_1736990600" width="25%">
 
-<img src="https://github.com/user-attachments/assets/268894e2-b3dd-47d5-a04f-5d6be1460bf6" alt="Screenshot_1736990603" width="25%">
+<img src="https://github.com/user-attachments/assets/1f52e69c-604f-4d46-8553-339aca36dbf5" alt="Screenshot_1736990603" width="25%">
 
-<img src="https://github.com/user-attachments/assets/8b21d052-c0f8-43ec-a258-ee20e32a3bd2" alt="Screenshot_1736990605" width="25%">
+<img src="https://github.com/user-attachments/assets/5490b9fb-149e-4bc8-99ae-4620a1500857" alt="Screenshot_1736990605" width="25%">
 
-<img src="https://github.com/user-attachments/assets/3c486108-6709-4882-bcde-fb53744783a6" alt="Screenshot_1736990607" width="25%">
-
-<img src="https://github.com/user-attachments/assets/0a9e1998-f981-4881-bc5b-7f40e65d717c" alt="Screenshot_1736990612" width="25%">
+<img src="https://github.com/user-attachments/assets/e9ff1fa3-e4fb-49c3-9266-9c2a6985f764" alt="Screenshot_1736990607" width="25%">
 
 <img src="https://github.com/user-attachments/assets/6ef20e46-0b80-48b5-8034-31bdd8d48251" alt="Screenshot_1736990658" width="25%">
 
